@@ -1,0 +1,10 @@
+exports[`Plan should render initial layout 1`] = `
+Array [
+<div id="plans" class="carousel-plans">
+
+</div>,
+]
+`;
+
+
+
