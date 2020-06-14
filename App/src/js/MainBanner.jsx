@@ -31,7 +31,7 @@ class MainBanner extends React.Component {
     render(){
 
         return(
-            <section class={"banner-sct"} key={"MainBanner"}>
+            <section className={"banner-sct"} key={"MainBanner"}>
 
 
                     <div className={"top-main-banner" }></div>

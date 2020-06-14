@@ -1,31 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="079301a7-eaae-4396-9b1c-56d83883f810" name="Default Changelist" comment="black images">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App/src/js/FirstTest.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App/src/js/__snapshots__/FirstTest.test.js.snap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="079301a7-eaae-4396-9b1c-56d83883f810" name="Default Changelist" comment="dete">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/.babelrc" beforeDir="false" afterPath="$PROJECT_DIR$/App/.babelrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/dist/css/main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/dist/css/main.css.map" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/App/dist/index.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/App/dist/js/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/dist/js/main.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/App/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/src/images/3BA0B663CFCE8B0C.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/src/images/bigwave.svg" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/images/bigwave.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App/src/js/MainBanner.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/js/MainBanner.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/src/js/Plan.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/js/Plan.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/src/js/Plan.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/js/FirstTest.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/src/js/__snapshots__/Plan.test.js.snap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/src/js/app.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/js/app.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/src/sass/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/sass/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/webpack.common.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/webpack.common.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/webpack.dev.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/webpack.dev.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/webpack.prod.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/webpack.prod.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/src/js/PriceApi.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/js/PriceApi.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +56,9 @@
       <option name="presentableId" value="Default" />
       <updated>1591986849261</updated>
       <workItem from="1591986850511" duration="3080000" />
-      <workItem from="1592088998290" duration="9255000" />
+      <workItem from="1592088998290" duration="9945000" />
+      <workItem from="1592150715936" duration="20000" />
+      <workItem from="1592156486005" duration="522000" />
     </task>
     <task id="LOCAL-00001" summary="webpackcongi">
       <created>1591986900668</created>
@@ -91,7 +74,21 @@
       <option name="project" value="LOCAL" />
       <updated>1591987170442</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="svg loader update&#10;babel 7">
+      <created>1592107435427</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1592107435427</updated>
+    </task>
+    <task id="LOCAL-00004" summary="mobile support">
+      <created>1592156632797</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1592156632797</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -100,22 +97,24 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="webpackcongi" />
     <MESSAGE value="black images" />
-    <option name="LAST_COMMIT_MESSAGE" value="black images" />
+    <MESSAGE value="svg loader update&#10;babel 7" />
+    <MESSAGE value="mobile support" />
+    <option name="LAST_COMMIT_MESSAGE" value="mobile support" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="929" y="179" key="CommitChangelistDialog2" timestamp="1591987170165">
+    <state x="929" y="179" key="CommitChangelistDialog2" timestamp="1592157016321">
       <screen x="0" y="23" width="2560" height="1057" />
     </state>
-    <state x="929" y="179" key="CommitChangelistDialog2/-1440.737.1440.877/0.23.2560.1057@0.23.2560.1057" timestamp="1591987170165" />
+    <state x="929" y="179" key="CommitChangelistDialog2/-1440.737.1440.877/0.23.2560.1057@0.23.2560.1057" timestamp="1592157016321" />
     <state x="345" y="144" width="2205" height="816" key="DiffContextDialog" timestamp="1592107014721">
       <screen x="0" y="23" width="2560" height="1057" />
     </state>
     <state x="-1246" y="837" width="1240" height="677" key="DiffContextDialog/-1440.737.1440.877/0.23.2560.1057@-1440.737.1440.877" timestamp="1592106142642" />
     <state x="345" y="144" width="2205" height="816" key="DiffContextDialog/-1440.737.1440.877/0.23.2560.1057@0.23.2560.1057" timestamp="1592107014721" />
-    <state x="944" y="318" key="Vcs.Push.Dialog.v2" timestamp="1591987173145">
+    <state x="944" y="318" key="Vcs.Push.Dialog.v2" timestamp="1592156635000">
       <screen x="0" y="23" width="2560" height="1057" />
     </state>
-    <state x="944" y="318" key="Vcs.Push.Dialog.v2/-1440.737.1440.877/0.23.2560.1057@0.23.2560.1057" timestamp="1591987173145" />
+    <state x="944" y="318" key="Vcs.Push.Dialog.v2/-1440.737.1440.877/0.23.2560.1057@0.23.2560.1057" timestamp="1592156635000" />
     <state x="-896" y="1084" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1592106130107">
       <screen x="-1440" y="737" width="1440" height="877" />
     </state>
