@@ -71,7 +71,7 @@ strong {
 /** banner */
 
 .top-main-banner{
-    height: 50px;
+    height: calc(10px + 1vw )!important;
     width: 100%;
     background-color: $color-blue-darker;
 }
@@ -87,26 +87,44 @@ strong {
     float: none;
 }
 .arrow-down{
-        margin: auto;
-        width: 32px;
-        height: 32px;
-        position: relative;
-        top: -22px;
-        /* z-index: -30; */
+    margin: auto;
+    width: 32px;
+    height: 32px;
+    position: relative;
+    top: -22px;
+    /* z-index: -30; */
 }
 
 .main-banner{
     display: inline-flex;
-    height: max-content;
+    //height: max-content;
     width: 100%;
     background-color: $color-blue-darker;
 }
 
 .middle-banner{
-    height: 100%;
-    width: inherit;
-    max-width: 720px;
+
+
+    background-color: $color-blue-darker;
     margin: auto;
+    z-index: 4;
+    padding: 10px;
+}
+
+
+
+.left-banner {
+    left: 0px;
+    z-index: 2;
+    position: relative;
+}
+
+.right-banner {
+
+    right: 0px;
+
+    z-index: 2;
+    position: relative;
 }
 
 
@@ -114,12 +132,12 @@ strong {
     color: $color-blue-soft;
     letter-spacing: 1.6px;
     text-align: center;
-     margin: 10px auto;
+    margin: 10px auto;
 }
 
 .middle-text-big {
     color: $color-withe;
-    font: Bold 30px/45px Montserrat;
+    font-size:  calc(1.1rem + 1vw);;
     margin: 20px auto;
     letter-spacing: 0px;
 }
@@ -261,14 +279,14 @@ strong {
 
 .plan-package-box div.plan-package-inner div.OrderNow a{
 
-        border-radius: 26px;
-        text-align: center;
-        font: Bold 20px/27px ;
-        letter-spacing: 0px;
-        color: #FFFFFF;
-        opacity: 1;
-        background-color: $color-blue-medium;
-        padding: 9px 63px;
+    border-radius: 26px;
+    text-align: center;
+    font: Bold 20px/27px ;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    background-color: $color-blue-medium;
+    padding: 9px 63px;
 
 }
 
@@ -363,10 +381,10 @@ strong {
 
 }
 .slider-hood {
-     /* width: max-content; */
-     background-color: #51c99c;
-     max-width: 1000px;
- }
+    /* width: max-content; */
+    background-color: #51c99c;
+    max-width: 1000px;
+}
 
 
 
@@ -375,6 +393,7 @@ strong {
 .carousel-wrapper{
     width: 990px;
 }
+
 
 
 .footer-note{
@@ -386,6 +405,7 @@ strong {
     opacity: 0.7;
     float: right;
     margin-right: 20px;
+    margin-top: 20px;
     margin-bottom: 100px;
 }
 
@@ -465,10 +485,16 @@ strong {
 
 
 
-
-
 @media screen and (min-width: 1025px) {
     //.control-arrow { display: none }
+
+
+
+    .banner-sct{
+
+        height: calc(550px - 5vw) !important;
+    }
+
 
     .react-slideshow-container .nav{
         display: none;
@@ -480,28 +506,10 @@ strong {
 
 
 
-        .left-banner {
-        height: 100%;
-        width: 560px;
-        float: left;
-        margin-left: auto;
-        margin-right: 10px;
-        z-index: 2;
-    }
-
-    .right-banner {
-        height: 340px;
-        width: 438px;
-        float: right;
-        left: auto;
-        margin-right: auto;
-        margin-left: 10px;
-        z-index: 2;
-    }
 
     .big-wave-hood {
         position: relative;
-        top: -136px;
+        top: -80px;
         width: 100%;
     }
 
@@ -517,6 +525,15 @@ strong {
 
 @media screen and (max-width: 1024px) {
 
+
+    .banner-sct {
+        height: auto;
+    }
+
+    .top-main-banner{
+
+        display: none
+    }
     .left-banner{
         display: none;
     }
@@ -538,7 +555,7 @@ strong {
     }
     .middle-text-big{
         text-align: center;
-        font: Bold 24px/32px Montserrat;
+        font-size:  calc(1.3rem + 1vw);;
         letter-spacing: 0px;
     }
     .middle-text-small {
@@ -560,12 +577,19 @@ strong {
         left: -34px;
     }
 
+    .main-banner{
+        max-height: 377px;
+    }
+
 
 }
 
 
 @media screen and (max-width: 321px) {
 
+    .banner-sct {
+        height: auto;
+    }
 
     .left-banner{
         display: none;
@@ -583,18 +607,17 @@ strong {
     }
     .middle-text-big{
         text-align: center;
-        font: Bold 24px/32px Montserrat;
+        font: Bold 18px/32px Montserrat;
         letter-spacing: 0px;
     }
     .middle-text-small {
-        font:  Regular 16px/20px Montserrat;
+        font:  Regular 14px/20px Montserrat;
 
     }
 
     .top-main-banner{
-        height: 12px;
-        width: 100%;
-        background-color: $color-blue-darker;
+
+        display: none
     }
     .plans-header{
         width: 300px;
@@ -635,5 +658,7 @@ strong {
 
 
 }
+
+
 
 

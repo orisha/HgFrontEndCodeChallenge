@@ -4,10 +4,10 @@
  */
 import React from "react";
 import ReactHtmlParser from 'react-html-parser';
-import IImg from "react-svg-loader!../images/Componente4.svg";
-import PlanoTurbo from 'react-svg-loader!../images/PlanoTurbo.svg';
-import PlanoM from 'react-svg-loader!../images/PlanoM.svg';
-import PlanoP from 'react-svg-loader!../images/PlanoP.svg';
+import  { ReactComponent as  IImg } from "../images/Componente4.svg";
+import  { ReactComponent as  PlanoTurbo } from '../images/PlanoTurbo.svg';
+import  { ReactComponent as  PlanoM } from '../images/PlanoM.svg';
+import  { ReactComponent as  PlanoP } from '../images/PlanoP.svg';
 
 
 /**

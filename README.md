@@ -160,13 +160,15 @@ Personal Comments and Annotations
 
 ### Configuration
 
-* Jest Test Unit is not working due to Babel Version... Try it running: <code>npm run test</code>
-* I could not update Babel version due to svg-loader .
+
+* [FIXED] Jest Test Unit is not working due to Babel Version... Try it running: <code>npm run test</code>
+* [FIXED] I could not update Babel version due to svg-loader .
 * I could not load images into scss files.
 
 ### Images
 
-* I problems with the svg images downloaded from xd site. It was all rendering black. To fix this, I had to open all images on photoshop and export it as svg again.  
+* [FIXED]I problems with the svg images downloaded from xd site. It was all rendering black. 
+To fix this, I had to open all images on photoshop and export it as svg again.  
 
 
 That's leading  to 2 issues :
@@ -189,5 +191,5 @@ That's leading  to 2 issues :
    
 The answer is <strong>NO</strong> .
 
-Due to issues on configuration and svg images, this app is not ready for production !
+Due to issues on svg images on css, this app is not ready for production !
 

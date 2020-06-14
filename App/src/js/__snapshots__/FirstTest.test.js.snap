@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FirstTest should render initial layout 1`] = `
+Array [
+  <div>
+     Say Hello Test !
+  </div>,
+]
+`;
+
+exports[`Plan should render initial layout 1`] = `Array [<div> Say Hello Test !</div>,]`;

@@ -5,7 +5,7 @@
 
 import React, { useState } from 'react';
 import PriceApi from './PriceApi.jsx'
-import Logo from 'react-svg-loader!../images/hostgator-logo.svg';
+import  { ReactComponent as Logo } from '../images/hostgator-logo.svg';
 import MainBanner from "./MainBanner.jsx";
 
 

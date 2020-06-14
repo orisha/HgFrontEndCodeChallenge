@@ -1,24 +1,41 @@
 const path = require('path');
-var webpack = require('webpack');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const HtmlWebPackPlugin = require("html-webpack-plugin");
 
-module.exports = {    
-    entry: ['./src/js/index.js','./src/sass/main.scss'],
+module.exports = {
     output: {
         filename: 'js/main.js',
         path: path.resolve(__dirname, 'dist')
     },
+    entry: ['./src/js/index.js','./src/sass/main.scss'],
     module: {
         rules: [
             {
-                test: /\.jsx?$/,
-                loader: 'babel-loader',
-                // include:  path.resolve(__dirname, '../src/'),
-                exclude: [/node_modules/],
-                query: {
-                    presets: ['es2015', 'react']
+                test: /\.(js|jsx)$/,
+                exclude: /node_modules/,
+                use: {
+                    loader: "babel-loader"
                 }
+            }
 
+            ,{
+                test: /\.html$/,
+                use: [
+                    {
+                        loader: "html-loader"
+                    }
+                ]
+            }
+            ,{
+                test: /\.s[ac]ss$/i,
+                use: [
+                    // Creates `style` nodes from JS strings
+                    'style-loader',
+                    // Translates CSS into CommonJS
+                    'css-loader?url=false',
+                    // Compiles Sass to CSS
+                    'sass-loader',
+                ]
             }
             ,{
                 test: /\.css$/,
@@ -30,29 +47,51 @@ module.exports = {
                 exclude: [/node_modules/],
                 loader: 'url-loader?limit=100000'
             }
-            ,{
-                test: /\.svg$/,
-                oneOf: [
-                    {
-                        include: path.resolve(__dirname, '../src/'),
-                        use: 'react-svg-loader'
-                    },
-                    {
-                        include: path.resolve(__dirname, '../node_modules/'),
-                        use: 'url-loader'
-                    },
-                ],
-            }
-        ]
 
+            // ,{
+            //     test: /\.svg$/,
+            //     oneOf: [
+            //         {
+            //             include: path.resolve(__dirname, '../src/'),
+            //             use: '@svgr/webpack'
+            //         },
+            //         {
+            //             include: path.resolve(__dirname, '../src/'),
+            //             use: 'react-svg-loader'
+            //         },
+            //         {
+            //             include: path.resolve(__dirname, '../node_modules/'),
+            //             use: 'url-loader'
+            //         },
+            //     ],
+            // }
+            ,{
+                test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
+                issuer: {
+                    test: /\.jsx?$/
+                },
+                use: ['babel-loader', '@svgr/webpack', 'url-loader']
+            }
+            // ,{
+            //     test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
+            //     issuer: {
+            //         test: /\.scss$/
+            //     },
+            //     use: ['url-loader']
+            // }
+            ,{
+                test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
+                loader: 'url-loader'
+            }
+
+        ]
     },
     plugins: [
-        new webpack.HotModuleReplacementPlugin(),
-        new HtmlWebpackPlugin({
+        new CleanWebpackPlugin(),
+        new HtmlWebPackPlugin({
             title: 'Host Gator Promo',
-            inject: false,
             template: require('html-webpack-template'),
             bodyHtmlSnippet :'<main class="main" id="app"></main>'
-        }),
+        })
     ]
-}
+};
